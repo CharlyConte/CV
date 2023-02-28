@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabajo Final</title>
+  <meta property="og:title" content="Curriculum Vitae" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+  <meta property="og:description" content="Este es el trabajo final, del curso: Primeros pasos del Desarrollo frontend, de Argentina Programa." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="./css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="encabezado">
+      <nav class="topnav">
+        <label class="logo">CV</label>
+        <button class="abrir-menu" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+        <ul class="menu">
+          <button class="cerrar-menu" aria-label="Cerrar menú"><i class='bx bx-x'></i></button>
+          <li><a href="#datos">Datos</a></li>
+          <li><a href="#perfilProfesional">Perfil</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#formacion">Formacion</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="datos">
+      <div class="contenedorfoto" id="contenedorfoto"><img id="foto" class="foto" src="" alt="Foto de perfil"/></div>
+      <div class="datosPersonales"><h1 id="nombre"></h1></div>
+      <div class="datosPersonales"><p id="domicilio"></p></div>
+      <div class="datosPersonales"><p id="datoscontacto"></p></div>
+    </section>
+    <section id="perfilProfesional" class="desplegable efecto">
+      <h3>Perfil</h3>
+      <p>Desarrollador de software con experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. Dominio de varias plataformas, lenguajes y sistemas integrados. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. Capaz de autogestión eficaz en proyectos independientes.</p>
+    </section>
+    <section id="experiencia" class="desplegable efecto">
+      <div class="titulo"><h3>Experiencia</h3></div>
+      <div class="Boton collapsible"><i class='bx bx-down-arrow-circle'></i></div>
+      <div class="content">
+        <span><i class='bx bx-calendar'></i> 2022 - Hoy | <i class='bx bx-map'></i> Argentina</span>
+        <h4>Front-End Desarrollador</h4>
+        <span>Desarrollo de aplicaciones web, para diversos rubros, bindrando servicio a las mas importantes marcas.</span>
+      </div>
+    </section>
+    <section id="habilidades" class="desplegable efecto">
+      <div class="titulo"><h3>Habilidades tecnicas</h3></div>
+      <div class="Boton collapsible"><i class='bx bx-down-arrow-circle'></i></div>
+      <div class="content">
+        <div class="habilidad">
+          <div class="detalles">
+            <span>HTML</span>
+          </div>
+          <div class="barras">
+            <div id="html-barra"></div>	
+          </div>
+        </div>
+        <div class="habilidad">
+          <div class="detalles">
+            <span>CSS</span>
+          </div>
+          <div class="barras">
+            <div id="CSS"></div>
+          </div>
+        </div>
+        <div class="habilidad">
+          <div class="detalles">
+            <span>JavaSCript</span>
+          </div>
+          <div class="barras">
+            <div id="JavaScript"></div>
+          </div>
+        </div>
+        <div class="habilidad">
+          <div class="detalles">
+            <span>Python</span>
+          </div>
+          <div class="barras">
+              <div id="Python"></div>
+          </div>
+        </div>
+        <div class="habilidad">
+          <div class="detalles">
+            <span>Angular</span>
+          </div>
+          <div class="barras">
+            <div id="Angular"></div>
+          </div>
+        </div>
+        <div class="habilidad">
+          <div class="detalles">
+            <span>ASP.NET</span>
+          </div>
+          <div class="barras">
+            <div id="ASPNET"></div>
+          </div>
+        </div>
+        <div class="habilidad">
+          <div class="detalles">
+            <span>PHP</span>
+          </div>
+          <div class="barras">
+            <div id="PHP"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="formacion" class="desplegable efecto">
+      <div class="titulo"><h3>Formación</h3></div>
+      <div class="Boton collapsible"><i class='bx bx-down-arrow-circle'></i></div>
+      <div class="content">
+        <h4><span><i class='bx bxs-graduation'></i></span>Licenciado en Tecnologia Informatica</h4>
+        <h5>E.A.N. Escuela Argentina de Negocios</h5>
+        <span>2018-2022</span>
+        <h4><i class='bx bxs-graduation'></i>Técnico Electromecanico</h4>
+        <h5>E.N.E.T. Nº1</h5>
+        <span>1990-1995</span>		
+      </div>
+    </section>
+    <footer>
+      <div id="redes" class="redes">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a> 
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="./js/app.js"></script>
+  </body>
+</html>
