@@ -8,7 +8,14 @@
   --colorFuente3:#fff;
 }
 
-*{margin: 0;padding: 0;list-style: none;text-decoration: none;outline: none;box-sizing: border-box;}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
 
 html{
   scroll-behavior: smooth;
@@ -79,10 +86,10 @@ div.datosPersonales > p, h1, h4{
 }
 
 .despegable > i {
-color: var(--colorFuente3);
-font-size: 3rem;
-background-color: none;
-text-align: center;
+  color: var(--colorFuente3);
+  font-size: 3rem;
+  background-color: none;
+  text-align: center;
 }
 
 /* Este es el Header con el menu */
@@ -147,6 +154,7 @@ text-align: center;
 
 .menu a:hover{
   color:var(--colorLink);
+  transition: 1.5s ease-out; 
 }
 
 .abrir-menu,
@@ -164,13 +172,14 @@ text-align: center;
 #perfilProfesional{margin-top:var(--separacion);}
 
 #perfilProfesional > p {
-margin: var(--separacion) 3rem;
-font-size: 1.5rem;}
+  margin: var(--separacion) 3rem;
+  font-size: 1.5rem;
+}
 
 .navbar-nav.navbar-center {
-position: absolute;
-left: 50%;
-transform: translatex(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 .titulo{
@@ -179,26 +188,39 @@ transform: translatex(-50%);
 }
 
 .Boton{
-width: 20%;
-padding: 0.65rem 0 0 0;
-margin:0 auto;
-text-align:right;
+  width: 20%;
+  padding: 0.65rem 0 0 0;
+  margin:0 auto;
+  text-align:right;
 }
 
-.Boton > i {
-font-size: 2.5rem;
-color: var(--colorFuente3);
-}
 
 .collapsible {
-cursor: pointer;
-text-align: right;
-outline: none;
-display: inline-flex;
-align-items:center;
-justify-content:right;
+  width: 20%;
+  padding: 0.65rem 0 0 0;
+  margin:0 auto;
+  text-align:right;  
+  cursor: pointer;
+  text-align: right;
+  outline: none;
+  display: inline-flex;
+  align-items:center;
+  justify-content:right;
+  font-size: 2.5rem;
+  color: var(--colorFuente3);
 }
 
+.collapsible i{
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+
+.collapsible i:hover{
+  color: var(--colorLink);
+  box-shadow: 0 0 10px var(--colorFuente2); 
+  transition: 1.5s ease-out; 
+}
 
 h1{color:var(--colorFuente3);}
 h3{color:var(--colorFuente3);}
@@ -220,9 +242,9 @@ a {cursor: pointer;}
 }
 
 .content > span {
-display: block;
-padding: 0.625rem 0;
-text-align: center;
+  display: block;
+  padding: 0.625rem 0;
+  text-align: center;
 }
 
 .habilidad{
@@ -283,10 +305,10 @@ footer{
 } 
 
 .redes{
-margin: 0 auto;
-text-align: center;
-opacity: 0;
-animation: aparecer 2s ease forwards;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  animation: aparecer 2s ease forwards;
 }
 
 .redes a{
